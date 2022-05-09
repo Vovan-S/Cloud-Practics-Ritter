@@ -1,7 +1,9 @@
+import os
+
 DB_CONFIG = {
-    'user': '<username>',
-    'password': '<password>',
-    'host': '127.0.0.1',
+    'user': os.environ.get('RITTER_DB_USER'),
+    'password': os.environ.get('RITTER_DB_PASSWORD'),
+    'host': os.environ.get('RITTER_DB_HOST'),
     'database': 'ritter'
 }
 
