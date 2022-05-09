@@ -1,0 +1,61 @@
+h1 {
+    background-color: aquamarine;
+    padding: 1rem;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 90%;
+}
+
+aside {
+    padding: 1rem;
+    border-right: 3px solid;
+}
+
+#content {
+    /* padding-left: 1rem; */
+    width: 80%;
+}
+
+.tweet {
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 3px solid;
+
+}
+
+.tweet h3, h4 {
+    margin: 0 0 0.5rem 0;
+}
+
+.retweet {
+    padding-left: 1rem;
+}
+
+.tweet details {
+    margin-bottom: 0.5rem;
+}
+
+form.login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 4rem;
+}
+
+form.new-tweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 10rem;
+}
+
+div.new-tweet {
+    margin-left: 1rem;
+}
+
+.retweet-form {
+    padding-left: 1rem;
+    border-left: 1px solid;
+    height: 4rem;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,6 @@
+tf/ritter-vars.tfvars
+tf/user-data.txt
+tf/terraform.*
+sql/test.sql
+python/__pycache__
+python/.cookiejar
