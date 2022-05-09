@@ -61,9 +61,11 @@ def print_tweet(data):
 db_cursor = None
 db_connection = None
 
-fin = open(COOKIEJAR_PATH, encoding='utf-8')
-users_cookie = eval(fin.read())
-fin.close()
+try:
+    with open(COOKIEJAR_PATH, encoding='utf-8') as fin: 
+        users_cookie = eval(fin.read())
+except FileNotFoundError:
+    users_cookie = {}
 
 
 class HttpGetHandler(BaseHTTPRequestHandler):
