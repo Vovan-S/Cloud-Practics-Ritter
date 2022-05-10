@@ -1,0 +1,3 @@
+RITTER_DB_USER=<username>
+RITTER_DB_PASSWORD=<password>
+RITTER_DB_HOST=<host>
