@@ -1,14 +1,14 @@
-CREATE DATABASE Ritter;
+CREATE DATABASE IF NOT EXISTS Ritter;
 USE Ritter;
 
-CREATE TABLE User (
+CREATE TABLE IF NOT EXISTS User (
     user_id INTEGER NOT NULL AUTO_INCREMENT,
     username CHAR(100) NOT NULL,
-    password_hash INTEGER NOT NULL,
+    password_hash CHAR(128) NOT NULL,
     PRIMARY KEY(user_id)
 );
 
-CREATE TABLE Tweet (
+CREATE TABLE IF NOT EXISTS Tweet (
     tweet_id INTEGER NOT NULL AUTO_INCREMENT,
     user_id INTEGER NOT NULL,
     tweet_time DATETIME NOT NULL,

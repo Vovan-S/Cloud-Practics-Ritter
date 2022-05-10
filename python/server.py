@@ -278,6 +278,6 @@ def run(server_class=HTTPServer, handler_class=BaseHTTPRequestHandler):
 
 if __name__ == '__main__':
     # print(hashlib.sha512("Hello".encode()).hexdigest())
-    print(hash_password("Вован"))
-    print(hash_password("Риточка"))
+    # print(hash_password("Вован"))
+    # print(hash_password("Риточка"))
     run(handler_class=HttpGetHandler)

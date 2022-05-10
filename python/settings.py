@@ -4,7 +4,7 @@ DB_CONFIG = {
     'user': os.environ.get('RITTER_DB_USER'),
     'password': os.environ.get('RITTER_DB_PASSWORD'),
     'host': os.environ.get('RITTER_DB_HOST'),
-    'database': 'ritter'
+    'database': 'Ritter'
 }
 
 COOKIEJAR_PATH = "python/.cookiejar"
