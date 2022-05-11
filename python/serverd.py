@@ -1,6 +1,6 @@
-
 import sys, os
 import server
+from settings import env
 
 try:
         pid = os.fork()
@@ -30,8 +30,8 @@ except OSError as e:
 sys.stdout.flush()
 sys.stderr.flush()
 si = open('/dev/null', 'r')
-so = open('/home/vova/ritter-log/output', 'a+')
-se = open('/home/vova/ritter-log/errors', 'a+')
+so = open(env['LOG_FORLDER'] + '/output', 'a+')
+se = open(env['LOG_FORLDER'] + '/errors', 'a+')
 os.dup2(si.fileno(), sys.stdin.fileno())
 os.dup2(so.fileno(), sys.stdout.fileno())
 os.dup2(se.fileno(), sys.stderr.fileno())

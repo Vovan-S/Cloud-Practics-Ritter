@@ -1,4 +1,6 @@
-import os
+with open('enviroment') as fin:
+    env = {x[0]: x[1].strip() 
+           for x in [line.split('=') for line in fin]}
 
 DB_CONFIG = {
     'user': os.environ.get('RITTER_DB_USER'),
@@ -9,6 +11,6 @@ DB_CONFIG = {
 
 COOKIEJAR_PATH = "python/.cookiejar"
 
-PASSWORD_SALT = "supersecretpa$$wordsalt"
+PASSWORD_SALT = env['SALT']
 
 PORT = 80

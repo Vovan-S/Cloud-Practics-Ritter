@@ -1,3 +1,6 @@
 RITTER_DB_USER=<username>
 RITTER_DB_PASSWORD=<password>
 RITTER_DB_HOST=<host>
+DEAMON_HOME=<path_to_home>
+LOG_FORLDER=<path_to_logs>
+SALT=<production_salt>
